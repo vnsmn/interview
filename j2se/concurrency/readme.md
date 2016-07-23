@@ -180,9 +180,9 @@ ages.put("John", 23);
 ```
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a7 "4")</summary>
+  <summary>[answer](answer.md#a7 "4")</summary>
    4<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a7 "detail")
+   [:bulb:](answer.md#a7 "detail")
 </details>
 ***
 <a name="a8"></a>
