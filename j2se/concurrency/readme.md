@@ -202,7 +202,8 @@ AtomicInteger i = new AtomicInteger();
 
 <details> 
   <summary>[answer](readme.md#a8 "1,2")</summary>
-   1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.
+   1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>
+   [:information_source:](src/main/java/concurrency/ConcurrentHashMapExample.java "example")   
 </details>
 
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
