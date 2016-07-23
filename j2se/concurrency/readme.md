@@ -26,7 +26,6 @@ while (it.hasNext()) {
 <details> 
   <summary>[answer]( "3")</summary>
    3
-
    [answer]( "3")
 </details>
 
