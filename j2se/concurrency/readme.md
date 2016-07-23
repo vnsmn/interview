@@ -152,6 +152,7 @@ ages.put("John", 23);
   <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "detail")
+   [:information_source:](src/main/java/concurrency/ConcurrentHashMapExample.java "example")
 </details>
 
 ######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html),[ConcurrentMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentMap.html),
@@ -202,8 +203,7 @@ AtomicInteger i = new AtomicInteger();
 
 <details> 
   <summary>[answer](readme.md#a8 "1,2")</summary>
-   1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>
-   [:information_source:](src/main/java/concurrency/ConcurrentHashMapExample.java "example")   
+   1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>      
 </details>
 
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
