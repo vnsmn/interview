@@ -33,5 +33,5 @@ specific to a thread. You could achieve the same effect prior to Java 7 by using
 .random is thread-safe, but uses a shared java.util.Random instance and can suffer from
 contention problems.
 ######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
-[:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a5)
+[:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a7)
 *** 
