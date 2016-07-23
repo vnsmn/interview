@@ -14,18 +14,18 @@ while (it.hasNext()) {
 ```
 *What is the result?*
 
-```text
-1. 6
-2. 12
-3. 4 2
-4. 4 2 6
-5. Compilation fails
-6. An exception is thrown at runtime
-```
+
+>1. 6
+>2. 12
+>3. 4 2
+>4. 4 2 6
+>5. Compilation fails
+>6. An exception is thrown at runtime
+
 
 <details> 
   <summary>[answer]( "3")</summary>
-   3
+   3<br/>
    [answer]( "3")
 </details>
 
