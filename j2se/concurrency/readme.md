@@ -104,7 +104,7 @@ while(it.hasNext()) {
 >6. UnsupportedOperationException is thrown at runtime
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "1,4")</summary>
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "6 (version 1.8)")</summary>
    6 (version 1.8)<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "detail")
 </details>
