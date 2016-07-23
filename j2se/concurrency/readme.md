@@ -49,19 +49,32 @@ while(it.hasNext()) {
 
 *Which shows the output that will be produced?*
 
-```text
-1. 12
-2. 10
-3. 4 2 6
-4. 4 6
-5. Compilation fails
-6. An exception is thrown at runtime
-```
+>1. 12
+>2. 10
+>3. 4 2 6
+>4. 4 6
+>5. Compilation fails
+>6. An exception is thrown at runtime
 
 <details> 
   <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "detail")
+</details>
+
+######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
+***
+<a name="a3"></a>
+`3` *Which methods from a CopyOnWriteArrayList will cause a new copy of the internal array to be created? (Choose all that apply.)*
+>1. add
+>2. get
+>3. iterator
+>4. remove
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a3 "1,4")</summary>
+   1,4<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a3 "detail")
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
