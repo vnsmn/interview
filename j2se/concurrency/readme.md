@@ -154,7 +154,9 @@ ages.put("John", 23);
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "detail")
 </details>
 
-######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html)
+######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html),
+[ConcurrentMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentMap.html),
+
 ***
 <a name="a7"></a>
 `7` *Which method represents the best approach to generating a random number between one and ten if the method will be called concurrently and repeatedly by multiple threads?*
