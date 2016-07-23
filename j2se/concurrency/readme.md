@@ -133,3 +133,54 @@ ArrayBlockingQueue<Integer> abq = new ArrayBlockingQueue<>(10);
 
 ######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
 ***
+<a name="a6"></a>
+`6` *Given:*
+
+```java
+ConcurrentMap<String,Integer> ages = new ConcurrentHashMap<>(); (2)
+ages.put("John", 23);
+```
+
+*Which method(s) would delete John from the map only if his value was still equal to 23?*
+
+>1. ages.delete("John", 23);
+>2. ages.deleteIfEquals("John", 23);
+>3. ages.remove("John", 23);
+>4. ages.removeIfEquals("John", 23);
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "3")</summary>
+   3<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "detail")
+</details>
+
+######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html)
+***
+<a name="a7"></a>
+`7` *Which method represents the best approach to generating a random number between one and ten if the method will be called concurrently and repeatedly by multiple threads?*
+
+```java
+1. public static int randomA() {
+    Random r = new Random();
+    return r.nextInt(10) + 1;
+}
+2. private static Random sr = new Random();
+    public static int randomB() {
+    return sr.nextInt(10) + 1;
+}
+3. public static int randomC() {
+    int i = (int)(Math.random() * 10 + 1);
+    return i;
+}
+4. public static int randomD() {
+    ThreadLocalRandom lr = ThreadLocalRandom.current();
+    return lr.nextInt(1, 11);
+}
+```
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a7 "4")</summary>
+   4<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a7 "detail")
+</details>
+***
