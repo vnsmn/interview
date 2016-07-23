@@ -1,3 +1,4 @@
+<a name="test1"></a>
 # Concurrency
   
 *1. The following block of code creates a CopyOnWriteArrayList, adds elements to it, and prints the contents:  
@@ -60,5 +61,5 @@ while(it.hasNext()) {
 [^2]: test2
 
 
-<a name="test1"></a>
+
 *[Concurrency]: Concurrency with the java.util.concurrent Package
