@@ -206,5 +206,5 @@ AtomicInteger i = new AtomicInteger();
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a8 "detail")
 </details>
 
-######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html),[ConcurrentMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/AtomicInteger.html),
+######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/AtomicInteger.html)
 ***
