@@ -8,20 +8,3 @@
 ######see: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
 [:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a2)
 ***
-
-Числовая сноска [5]_.
-
-.. [5] Сюда ведет числовая сноска.
-
-Сноски с автоматической [#]_ нумерацией [#]_.
-
-.. [#] Это первая сноска.
-.. [#] Это вторая сноска.
-
-Авто­символ сносок используйте вот так [*]_ и [*]_.
-
-.. [*] Это первый символ.
-.. [*] Это второй символ.
-
-H\ :sub:`2`\ O
-E = mc\ :sup:`2`
