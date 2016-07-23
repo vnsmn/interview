@@ -79,3 +79,35 @@ while(it.hasNext()) {
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
 ***
+<a name="a4"></a>
+`4` *Given:*
+
+```java
+CopyOnWriteArrayList<Integer> cowList = new CopyOnWriteArrayList<>();
+cowList.add(4);
+cowList.add(2);
+cowList.add(6);
+Iterator<Integer> it = cowList.iterator();
+while(it.hasNext()) {
+    it.remove(0);
+    System.out.print(it.next() + " ");
+}
+```
+
+*Which shows the output that will be produced?*
+
+>1. 4
+>2. 4 2 6
+>3. 2 6
+>4. 2
+>5. Compilation fails
+>6. UnsupportedOperationException is thrown at runtime
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "1,4")</summary>
+   6 (version 1.8)<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "detail")
+</details>
+
+######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator())
+***
