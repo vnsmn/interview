@@ -89,8 +89,8 @@ cowList.add(2);
 cowList.add(6);
 Iterator<Integer> it = cowList.iterator();
 while(it.hasNext()) {
-    it.remove();
     System.out.print(it.next() + " ");
+    it.remove();
 }
 ```
 
