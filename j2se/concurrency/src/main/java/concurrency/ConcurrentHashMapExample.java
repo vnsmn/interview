@@ -6,9 +6,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 import org.junit.Assert;
 
-/**
- * ["back"](https://github.com/vnsmn/interview/tree/master/j2se/concurrency/readme.md#a8)
- */
 public class ConcurrentHashMapExample {
     static class ObjectTest {
         private int value;
