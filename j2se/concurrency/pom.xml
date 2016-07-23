@@ -4,7 +4,7 @@
     <groupId>interview.j2se.concurrency</groupId>
     <artifactId>j2se.concurrency</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>j2se.concurrency</name>
     <url>http://maven.apache.org</url>
 

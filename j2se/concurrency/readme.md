@@ -185,3 +185,26 @@ ages.put("John", 23);
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a7 "detail")
 </details>
 ***
+<a name="a8"></a>
+`8` *Given:*
+
+```java
+AtomicInteger i = new AtomicInteger();
+```
+
+*Which atomically increment i by 9? (Choose all that apply.)*
+
+>1. i.addAndGet(9);
+>2. i.getAndAdd(9);
+>3. i.set(i.get() + 9);
+>4. i.atomicIncrement(9);
+>5. i = i + 9;
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a8 "4")</summary>
+   1,2<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a8 "detail")
+</details>
+
+######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html),[ConcurrentMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/AtomicInteger.html),
+***
