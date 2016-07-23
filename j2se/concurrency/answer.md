@@ -25,6 +25,16 @@ The two offer methods will return false if the queue is full. Only the put metho
 until space becomes available.
 ######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
 [:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a5)
+***
+`6`<a name="a6"></a>
+The methods for answers 1, 2, and 4 do not exist in a ConcurrentHashMap. A traditional
+Map contains a single-argument remove method that removes an element based on its key. The
+ConcurrentMap interface (which ConcurrentHashMap implements) added the two-argument
+remove method, which takes a key and a value. An element will only be removed from the Map
+if its value matches the second argument. A boolean is returned to indicate if the element was
+removed.
+######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html)
+[:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a6)
 *** 
 `7`<a name="a7"></a>
 The ThreadLocalRandom creates and retrieves Random instances that are
