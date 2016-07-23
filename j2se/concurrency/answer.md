@@ -23,6 +23,6 @@ The iterator does NOT support the remove method.
 The add method will throw an IllegalStateException if the queue is full.
 The two offer methods will return false if the queue is full. Only the put method will block
 until space becomes available.
-######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
+######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
 [:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a5)
 *** 
