@@ -111,3 +111,25 @@ while(it.hasNext()) {
 
 ######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator())
 ***
+<a name="a5"></a>
+`5` *Given:*
+
+```java
+ArrayBlockingQueue<Integer> abq = new ArrayBlockingQueue<>(10);
+```
+
+*Which operation(s) can block indefinitely? (Choose all that apply.)*
+
+>1. abq.add(1);
+>2. abq.offer(1);
+>3. abq.put(1);
+>4. abq.offer(1, 5, TimeUnit.SECONDS);
+
+<details> 
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a5 "3")</summary>
+   3<br/>
+   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a5 "detail")
+</details>
+
+######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
+***

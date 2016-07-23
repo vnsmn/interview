@@ -18,4 +18,11 @@ The iterator will not reflect additions, removals, or changes to the list since 
 The iterator does NOT support the remove method.
 ######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator())
 [:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a3)
+***
+`5`<a name="a5"></a>
+The add method will throw an IllegalStateException if the queue is full.
+The two offer methods will return false if the queue is full. Only the put method will block
+until space becomes available.
+######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator())
+[:back:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/readme.md#a3)
 *** 
