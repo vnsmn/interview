@@ -25,9 +25,9 @@ while (it.hasNext()) {
 
 
 <details> 
-  <summary>[answer]( "3")</summary>
-   3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "detail")
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "3")</summary>
+  3<br/>
+  [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "detail")
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
@@ -59,9 +59,9 @@ while(it.hasNext()) {
 ```
 
 <details> 
-  <summary>[answer]( "3")</summary>
-   3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "detail")
+  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "3")</summary>
+  3<br/>
+  [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "detail")
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
