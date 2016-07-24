@@ -202,9 +202,11 @@ AtomicInteger i = new AtomicInteger();
 >5. i = i + 9;
 
 <details> 
-  <summary title="1,2">![](//key.png "Optional title")</summary>
+  <summary><strong title="1,2">![][key]</strong></summary>
    1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>      
 </details>
 
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
 ***
+
+[key]: https://github.com/vnsmn/interview/blob/master/key.png
