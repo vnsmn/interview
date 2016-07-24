@@ -208,3 +208,8 @@ AtomicInteger i = new AtomicInteger();
 
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
 ***
+
+
+This is text with a footnote link at the end. [^1]
+
+[^1]: This is my first footnote
