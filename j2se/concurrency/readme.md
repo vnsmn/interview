@@ -181,7 +181,7 @@ ages.put("John", 23);
 ```
 
 <details>
-  <summary title="4">answer</summary>
+  <summary><strong title="4">![][key]</strong></summary>
    4<br/>   
    <a href="answer.md#a7" title="detail">![][help]</a>
 </details>
