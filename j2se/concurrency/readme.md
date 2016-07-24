@@ -25,7 +25,7 @@ while (it.hasNext()) {
 
 
 <details> 
-  <summary>[answer](answer.md#a1 "3")</summary>
+  <summary><strong title="3">![][key]</strong></summary>
    3<br/>
    <a href="answer.md#a1" title="detail">![][help]</a>   
 </details>
@@ -57,7 +57,7 @@ while(it.hasNext()) {
 >6. An exception is thrown at runtime
 
 <details> 
-  <summary>[answer](answer.md#a2 "3")</summary>
+  <summary><strong title="3">![][key]</strong></summary>
    3<br/>
    <a href="answer.md#a2" title="detail">![][help]</a>   
 </details>
@@ -72,7 +72,7 @@ while(it.hasNext()) {
 >4. remove
 
 <details> 
-  <summary>[answer](answer.md#a3 "1,4")</summary>
+  <summary><strong title="1,4">![][key]</strong></summary>
    1,4<br/>
    <a href="answer.md#a3" title="detail">![][help]</a>   
 </details>
@@ -104,7 +104,7 @@ while(it.hasNext()) {
 >6. UnsupportedOperationException is thrown at runtime
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "6 (version 1.8)")</summary>
+  <summary><strong title="6 (version 1.8)">![][key]</strong></summary>
    6 (version 1.8)<br/>
    <a href="answer.md#a4" title="detail">![][help]</a>
 </details>
@@ -126,7 +126,7 @@ ArrayBlockingQueue<Integer> abq = new ArrayBlockingQueue<>(10);
 >4. abq.offer(1, 5, TimeUnit.SECONDS);
 
 <details> 
-  <summary>[answer](answer.md#a5 "3")</summary>
+  <summary><strong title="3">![][key]</strong></summary>
    3<br/>
    <a href="answer.md#a5" title="detail">![][help]</a>   
 </details>
@@ -149,7 +149,7 @@ ages.put("John", 23);
 >4. ages.removeIfEquals("John", 23);
 
 <details>
-  <summary>[answer](answer.md#a6 "3")</summary>
+  <summary><strong title="3">![][key]</strong></summary>
    3<br/>
    <a href="answer.md#a6" title="detail">![][help]</a>
    <a href="src/main/java/concurrency/ConcurrentHashMapExample.java" title="code">![][code]</a>
@@ -182,7 +182,7 @@ ages.put("John", 23);
 
 <details>
   <summary><strong title="4">![][key]</strong></summary>
-   4<br/>   
+   4<br/>
    <a href="answer.md#a7" title="detail">![][help]</a>
 </details>
 ***
