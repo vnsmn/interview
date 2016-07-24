@@ -208,6 +208,57 @@ AtomicInteger i = new AtomicInteger();
 
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
 ***
+<a name="a9"></a>
+`9` *Given:*
+
+```java
+public class LeaderBoard {
+    private ReadWriteLock rwl = new ReentrantReadWriteLock();
+    private List<Integer> highScores = new ArrayList<>();
+    public void addScore(Integer score) {
+        // position A
+        lock.lock();
+        try {
+            if (highScores.size() < 10) {
+                highScores.add(score);
+            } else if (highScores.get(highScores.size() - 1) < score) {
+                highScores.set(highScores.size() - 1, score);
+            } else {
+                return;
+            }
+            Collections.sort(highScores, Collections.reverseOrder());
+        } finally {
+            lock.unlock();
+        }
+    }
+    public List<Integer> getHighScores() {
+        // position B
+        lock.lock();
+        try {
+            return Collections.unmodifiableList(highScores);
+        } finally {
+            lock.unlock();
+        }
+    }
+}
+```
+
+*Which block(s) of code best match the behavior of the methods in the LeaderBoard class?
+(Choose all that apply.)*
+
+>1. Lock lock = rwl.reentrantLock(); // should be inserted at position A
+>2. Lock lock = rwl.reentrantLcock(); // should be inserted at position B
+>3. Lock lock = rwl.readLock(); // should be inserted at position A
+>4. Lock lock = rwl.readLock(); // should be inserted at position B
+>5. Lock lock = rwl.writeLock(); // should be inserted at position A
+>6. Lock lock = rwl.writeLock(); // should be inserted at position B
+
+<details> 
+  <summary><strong title="*">![][key]</strong></summary>         
+</details>
+
+######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
+***
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
