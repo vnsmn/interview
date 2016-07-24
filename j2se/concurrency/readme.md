@@ -210,6 +210,6 @@ AtomicInteger i = new AtomicInteger();
 ***
 
 
-This is text with a footnote link at the end. [^1]
+# Concurrency1
 
-[^1]: This is my first footnote
+*[Concurrency1]: Concurrency with the java.util.concurrent Package
