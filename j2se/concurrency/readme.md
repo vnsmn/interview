@@ -184,6 +184,7 @@ ages.put("John", 23);
   <summary title="4">answer</summary>
    4<br/>
    [:bulb:](answer.md#a7 "detail")
+   <a href="answer.md#a7" title="detail">![][help]</a>
 </details>
 ***
 <a name="a8"></a>
@@ -209,4 +210,6 @@ AtomicInteger i = new AtomicInteger();
 ######*see*: [AtomicInteger](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/atomic/AtomicInteger.html)
 ***
 
-[key]: https://github.com/vnsmn/interview/blob/master/key.png
+[key]: https://github.com/vnsmn/interview/blob/master/images/key.png
+[help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
+[code]: https://github.com/vnsmn/interview/blob/master/images/source-code-24.png
