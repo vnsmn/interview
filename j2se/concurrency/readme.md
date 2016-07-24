@@ -27,7 +27,7 @@ while (it.hasNext()) {
 <details> 
   <summary>[answer](answer.md#a1 "3")</summary>
    3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "detail")
+   <a href="answer.md#a1" title="detail">![][help]</a>   
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
@@ -59,7 +59,7 @@ while(it.hasNext()) {
 <details> 
   <summary>[answer](answer.md#a2 "3")</summary>
    3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "detail")
+   <a href="answer.md#a2" title="detail">![][help]</a>   
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
@@ -74,7 +74,7 @@ while(it.hasNext()) {
 <details> 
   <summary>[answer](answer.md#a3 "1,4")</summary>
    1,4<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a3 "detail")
+   <a href="answer.md#a3" title="detail">![][help]</a>   
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://www.google.com/url?q=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Futil%2Fconcurrent%2FCopyOnWriteArrayList.html&sa=D&sntz=1&usg=AFrqEzcUe8jylq_8cFi8NuZamP2TVqL0-A)
@@ -106,7 +106,7 @@ while(it.hasNext()) {
 <details> 
   <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "6 (version 1.8)")</summary>
    6 (version 1.8)<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a4 "detail")
+   <a href="answer.md#a4" title="detail">![][help]</a>
 </details>
 
 ######*see*: [CopyOnWriteArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html#iterator())
@@ -128,7 +128,7 @@ ArrayBlockingQueue<Integer> abq = new ArrayBlockingQueue<>(10);
 <details> 
   <summary>[answer](answer.md#a5 "3")</summary>
    3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a5 "detail")
+   <a href="answer.md#a5" title="detail">![][help]</a>   
 </details>
 
 ######*see*: [ArrayBlockingQueue](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
@@ -151,8 +151,8 @@ ages.put("John", 23);
 <details>
   <summary>[answer](answer.md#a6 "3")</summary>
    3<br/>
-   [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "detail")
-   [:information_source:](src/main/java/concurrency/ConcurrentHashMapExample.java "example")
+   <a href="answer.md#a6" title="detail">![][help]</a>
+   <a href="src/main/java/concurrency/ConcurrentHashMapExample.java" title="code">![][code]</a>
 </details>
 
 ######*see*: [ConcurrentHashMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentHashMap.html),[ConcurrentMap](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentMap.html),
@@ -182,8 +182,7 @@ ages.put("John", 23);
 
 <details>
   <summary title="4">answer</summary>
-   4<br/>
-   [:bulb:](answer.md#a7 "detail")
+   4<br/>   
    <a href="answer.md#a7" title="detail">![][help]</a>
 </details>
 ***
