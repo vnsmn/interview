@@ -202,7 +202,7 @@ AtomicInteger i = new AtomicInteger();
 >5. i = i + 9;
 
 <details> 
-  <summary title="1,2">![]((repo)/1f511.png "Optional title")</summary>
+  <summary title="1,2">![](//s/key.png "Optional title")</summary>
    1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>      
 </details>
 
