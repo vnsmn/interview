@@ -25,7 +25,7 @@ while (it.hasNext()) {
 
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "3")</summary>
+  <summary>[answer](answer.md#a1 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a1 "detail")
 </details>
@@ -57,7 +57,7 @@ while(it.hasNext()) {
 >6. An exception is thrown at runtime
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "3")</summary>
+  <summary>[answer](answer.md#a2 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a2 "detail")
 </details>
@@ -72,7 +72,7 @@ while(it.hasNext()) {
 >4. remove
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a3 "1,4")</summary>
+  <summary>[answer](answer.md#a3 "1,4")</summary>
    1,4<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a3 "detail")
 </details>
@@ -126,7 +126,7 @@ ArrayBlockingQueue<Integer> abq = new ArrayBlockingQueue<>(10);
 >4. abq.offer(1, 5, TimeUnit.SECONDS);
 
 <details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a5 "3")</summary>
+  <summary>[answer](answer.md#a5 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a5 "detail")
 </details>
@@ -148,8 +148,8 @@ ages.put("John", 23);
 >3. ages.remove("John", 23);
 >4. ages.removeIfEquals("John", 23);
 
-<details> 
-  <summary>[answer](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "3")</summary>
+<details>
+  <summary>[answer](answer.md#a6 "3")</summary>
    3<br/>
    [:bulb:](https://github.com/vnsmn/interview/blob/master/j2se/concurrency/answer.md#a6 "detail")
    [:information_source:](src/main/java/concurrency/ConcurrentHashMapExample.java "example")
@@ -180,8 +180,8 @@ ages.put("John", 23);
 }
 ```
 
-<details> 
-  <summary>[answer](answer.md#a7 "4")</summary>
+<details>
+  <summary title="4">answer</summary>
    4<br/>
    [:bulb:](answer.md#a7 "detail")
 </details>
@@ -202,7 +202,7 @@ AtomicInteger i = new AtomicInteger();
 >5. i = i + 9;
 
 <details> 
-  <summary style="cursor:help" title="1,2">answer</summary>
+  <summary title="1,2">answer</summary>
    1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>      
 </details>
 
