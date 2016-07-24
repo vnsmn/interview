@@ -202,7 +202,7 @@ AtomicInteger i = new AtomicInteger();
 >5. i = i + 9;
 
 <details> 
-  <summary title="1,2">[######answer######]()</summary>
+  <summary title="1,2">[###### answer]()</summary>
    1 and 2 are correct. The addAndGet and getAndAdd both increment the value stored in an AtomicInteger.<br/>      
 </details>
 
