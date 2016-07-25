@@ -338,7 +338,7 @@ private Integer executeTask(ExecutorService service, Callable<Integer> task) {
 >1.
 ```java
 try {
-    return service.submit(task);`
+    return service.submit(task);
 } catch (Exception e) {
     return null;
 }
@@ -370,7 +370,10 @@ try {
 }
 ```
 <details>
-  <summary><strong title="*">![][key]</strong></summary>     
+  <summary><strong title="3">![][key]</strong></summary>
+       3 is correct. When you submit a Callable to an ExecutorService for execution, you
+       will receive a Future as the result. You can use the Future to check on the status of the
+       Callable's execution, or just use the get method to block until the result is available.
 </details>
 
 ######*see*: [ExecutorService](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html)
