@@ -284,18 +284,18 @@ System.out.println("WRITE-UNLOCK-1");
 *What is the result?*
 
 >1. The code will not compile
->2. The code will compile and output:
-> READ-UNLOCK-1
-> READ-LOCK-1
-> READ-LOCK-2
-> READ-UNLOCK-2
->3. The code will compile and output:
-> READ-UNLOCK-1
-> READ-LOCK-1
-> READ-LOCK-2
-> READ-UNLOCK-2
-> WRITE-LOCK-1
-> WRITE-UNLOCK-1
+>2. The code will compile and output:<br/>
+> READ-UNLOCK-1<br/>
+> READ-LOCK-1<br/>
+> READ-LOCK-2<br/>
+> READ-UNLOCK-2<br/>
+>3. The code will compile and output:<br/>
+> READ-UNLOCK-1<br/>
+> READ-LOCK-1<br/>
+> READ-LOCK-2<br/>
+> READ-UNLOCK-2<br/>
+> WRITE-LOCK-1<br/>
+> WRITE-UNLOCK-1<br/>
 >4. A java.lang.IllegalMonitorStateException will be thrown
 
 <details>
