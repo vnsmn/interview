@@ -299,7 +299,10 @@ System.out.println("WRITE-UNLOCK-1");
 >4. A java.lang.IllegalMonitorStateException will be thrown
 
 <details>
-  <summary><strong title="*">![][key]</strong></summary>   
+  <summary><strong title="4">![][key]</strong></summary>
+     4 is correct. A lock counts the number of times it has been locked. Calling lock
+     increments the count, and calling unlock decrements the count. If a call to unlock decreases
+     the count below zero, an exception is thrown.
 </details>
 
 ######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
