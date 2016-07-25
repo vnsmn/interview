@@ -262,6 +262,48 @@ public class LeaderBoard {
 
 ######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
 ***
+<a name="a10"></a>
+`10` *Given:*
+
+```java
+ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
+rwl.readLock().unlock();
+System.out.println("READ-UNLOCK-1");
+rwl.readLock().lock();
+System.out.println("READ-LOCK-1");
+rwl.readLock().lock();
+System.out.println("READ-LOCK-2");
+rwl.readLock().unlock();
+System.out.println("READ-UNLOCK-2");
+rwl.writeLock().lock();
+System.out.println("WRITE-LOCK-1");
+rwl.writeLock().unlock();
+System.out.println("WRITE-UNLOCK-1");
+```
+
+*What is the result?*
+
+>1. The code will not compile
+>2. The code will compile and output:
+> READ-UNLOCK-1
+> READ-LOCK-1
+> READ-LOCK-2
+> READ-UNLOCK-2
+>3. The code will compile and output:
+> READ-UNLOCK-1
+> READ-LOCK-1
+> READ-LOCK-2
+> READ-UNLOCK-2
+> WRITE-LOCK-1
+> WRITE-UNLOCK-1
+>4. A java.lang.IllegalMonitorStateException will be thrown
+
+<details>
+  <summary><strong title="*">![][key]</strong></summary>   
+</details>
+
+######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
+***
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
