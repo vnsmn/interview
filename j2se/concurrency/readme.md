@@ -307,6 +307,66 @@ System.out.println("WRITE-UNLOCK-1");
 
 ######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
 ***
+<a name="a11"></a>
+`11` *Which class contains factory methods to produce preconfigured ExecutorService instances?*
+
+>1. Executor
+>2. Executors
+>3. ExecutorService
+>4. ExecutorServiceFactory
+
+<details>
+  <summary><strong title="2">![][key]</strong></summary>
+     2 is correct. Executor is the super-interface for ExecutorService. You use Executors to
+     easily obtain ExecutorService instances with predefined threading behavior. If the Executor
+     interface does not produce ExecutorService instances with the behaviors that you desire,
+     you can always look into using java.util.concurrent.AbstractExecutorService or
+     java.util.concurrent.ThreadPoolExecutor directly.
+</details>
+
+######*see*: [Executors](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Executors.html)
+***
+<a name="a12"></a>
+`12` *Given:*
+
+```java
+private Integer executeTask(ExecutorService service,
+Callable<Integer> task) {
+// insert here
+}
+```
+*Which set(s) of lines, when inserted, would correctly use the ExecutorService argument to
+execute the Callable and return the Callable 's result? (Choose all that apply.)*
+
+>1. try {
+>        return service.submit(task);
+>    } catch (Exception e) {
+>        return null;
+>    }
+>2. try {
+return service.execute(task);
+} catch (Exception e) {
+return null;
+}
+C. try {
+Future<Integer> future = service.submit(task);
+return future.get();
+} catch (Exception e) {
+return null;
+}
+D. try {
+Result<Integer> result = service.submit(task);
+return result.get();
+} catch (Exception e) {
+return null;
+}
+
+<details>
+  <summary><strong title="*">![][key]</strong></summary>     
+</details>
+
+######*see*: [ExecutorService](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html)
+***
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
