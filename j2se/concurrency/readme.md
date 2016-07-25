@@ -247,14 +247,17 @@ public class LeaderBoard {
 (Choose all that apply.)*
 
 >1. Lock lock = rwl.reentrantLock(); // should be inserted at position A
->2. Lock lock = rwl.reentrantLcock(); // should be inserted at position B
+>2. Lock lock = rwl.reentrantLock(); // should be inserted at position B
 >3. Lock lock = rwl.readLock(); // should be inserted at position A
 >4. Lock lock = rwl.readLock(); // should be inserted at position B
 >5. Lock lock = rwl.writeLock(); // should be inserted at position A
 >6. Lock lock = rwl.writeLock(); // should be inserted at position B
 
-<details> 
-  <summary><strong title="*">![][key]</strong></summary>         
+<details>
+  <summary><strong title="4,5">![][key]</strong></summary>
+   4 and 5 are correct. The addScore method modifies the collection and, therefore, should
+   use a write lock, while the getHighScores method only reads the collection and should use a
+   read lock.
 </details>
 
 ######*see*: [ReentrantReadWriteLock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html)
