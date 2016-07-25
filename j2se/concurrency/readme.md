@@ -379,6 +379,28 @@ try {
 
 ######*see*: [ExecutorService](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html)
 ***
+<a name="a13"></a>
+`13` *Which are true? (Choose all that apply.)*
+
+>1. A Runnable may return a result, but must not throw an Exception
+>2. A Runnable must not return a result nor throw an Exception
+>3. A Runnable must not return a result, but may throw an Exception
+>4. A Runnable may return a result and throw an Exception
+>5. A Callable may return a result, but must not throw an Exception
+>6. A Callable must not return a result nor throw an Exception
+>7. A Callable must not return a result, but may throw an Exception
+>8. A Callable may return a result and throw an Exception
+
+<details>
+  <summary><strong title="2,8">![][key]</strong></summary>
+       2 and 8 are correct. Runnable and Callable serve similar purposes. Runnable has been
+       available in Java since version 1. Callable was introduced in Java 5 and serves as a more
+       flexible alternative to Runnable. A Callable allows a generic return type and permits thrown
+       exceptions, while a Runnable does not.
+</details>
+
+######*see*: [Callable](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html)
+***
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
