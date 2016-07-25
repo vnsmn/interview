@@ -330,37 +330,45 @@ System.out.println("WRITE-UNLOCK-1");
 `12` *Given:*
 
 ```java
-private Integer executeTask(ExecutorService service,
-Callable<Integer> task) {
+private Integer executeTask(ExecutorService service, Callable<Integer> task) {
 // insert here
 }
 ```
-*Which set(s) of lines, when inserted, would correctly use the ExecutorService argument to
-execute the Callable and return the Callable 's result? (Choose all that apply.)*
-
->1. try {
->        return service.submit(task);
->    } catch (Exception e) {
->        return null;
->    }
->2. try {
-return service.execute(task);
+*Which set(s) of lines, when inserted, would correctly use the ExecutorService argument to execute the Callable and return the Callable 's result? (Choose all that apply.)*
+>1.
+```java
+try {
+    return service.submit(task);`
 } catch (Exception e) {
-return null;
+    return null;
 }
-C. try {
-Future<Integer> future = service.submit(task);
-return future.get();
+```
+>2.
+```java
+try {
+    return service.execute(task);
 } catch (Exception e) {
-return null;
+    return null;
 }
-D. try {
-Result<Integer> result = service.submit(task);
-return result.get();
+```
+>3.
+```java
+try {
+    Future<Integer> future = service.submit(task);
+    return future.get();
 } catch (Exception e) {
-return null;
+    return null;
 }
-
+```
+>4.
+```java
+try {
+    Result<Integer> result = service.submit(task);
+    return result.get();
+} catch (Exception e) {
+    return null;
+}
+```
 <details>
   <summary><strong title="*">![][key]</strong></summary>     
 </details>
