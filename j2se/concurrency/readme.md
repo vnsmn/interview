@@ -401,6 +401,82 @@ try {
 
 ######*see*: [Callable](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html)
 ***
+<a name="a14"></a>
+`14` *Given*
+
+```java
+public static class IncrementAction extends RecursiveAction {
+    private final int threshold;
+    private final int[] myArray;
+    private int start;
+    private int end;
+
+    public IncrementAction(int[] myArray, int start, int end, int threshold) {
+        this.threshold = threshold;
+        this.myArray = myArray;
+        this.start = start;
+        this.end = end;
+    }
+
+    @Override
+    protected void compute() {
+        if (end - start < threshold) {
+            for (int i = start; i <= end; i++) {
+                myArray[i]++;
+            }
+        } else {
+            int midway = (end - start) / 2 + start;
+            IncrementAction a1 = new IncrementAction(myArray, start,
+                    midway, threshold);
+            IncrementAction a2 = new IncrementAction(myArray, midway + 1,
+                    end, threshold);
+            invokeAll(a1, a2);
+        }
+    }
+}
+```
+
+*Which line(s), when inserted at the end of the compute method, would correctly take the place of separate calls to fork() and join() ? (Choose all that apply.)*
+
+>1. compute();
+>2. forkAndJoin(a1, a2);
+>3. computeAll(a1, a2);
+>4. invokeAll(a1, a2);
+
+<details>
+  <summary><strong title="4">![][key]</strong></summary>
+       4 is correct. The invokeAll method is a var args method that will fork all Fork-Join tasks,
+       except one that will be invoked directly.
+       1, 2, and 3 are incorrect; they would not correctly complete the Fork-Join process.
+</details>
+
+######*see*: [RecursiveAction](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/RecursiveAction.html)
+***
+<a name="a15"></a>
+`15` *When writing a RecursiveTask subclass, which are true? (Choose all that apply.)*
+
+>1. fork() and join() should be called on the same task
+>2. fork() and compute() should be called on the same task
+>3. compute() and join() should be called on the same task
+>4. compute() should be called before fork()
+>5. fork() should be called before compute()
+>6. join() should be called after fork() but before compute()
+
+<details>
+  <summary><strong title="1,5">![][key]</strong></summary>
+    1 and 5 are correct. When creating multiple ForkJoinTask instances, all tasks except one
+    should be forked first so that they can be picked up by other Fork-Join worker threads. The final
+    task should then be executed within the same thread (typically by calling compute() ) before
+    calling join on all the forked tasks to await their results. In many cases, calling the methods in
+    the wrong order will not result in any compiler errors, so care must be taken to call the methods
+    in the correct order.
+</details>
+
+######*see*: [RecursiveTask](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/RecursiveTask.html)
+***
+
+
+
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
