@@ -73,7 +73,7 @@ public class SampleSerialization {
 
 <details>
   <summary><strong title="1">![][key]</strong></summary>
-    1 are correct.
+    1 are correct.</br>
     <a href="SampleSerialization.java" title="code">![][code]</a>
 </details>
 
