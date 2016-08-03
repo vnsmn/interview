@@ -50,24 +50,24 @@ public class SampleSerialization {
 *Что распечает следующий код ?*
 >1.
 ```java 
- * A.f11=11
- * B.f21=21
- * serialization
- * A.f11=11
+    A.f11=11
+    B.f21=21
+    serialization
+    A.f11=11
 ```
 >2. 
 ```java 
- * A.f11=11
- * B.f21=21
- * serialization
- * A.f11=11
- * B.f21=21
+    A.f11=11
+    B.f21=21
+    serialization
+    A.f11=11
+    B.f21=21
 ```
 >3.
 ```java 
- * A.f1=100
- * B.f2=100
- * serialization
+    A.f1=100
+    B.f2=100
+    serialization
 ```
 
 <details>
