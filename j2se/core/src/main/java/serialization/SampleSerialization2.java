@@ -8,30 +8,35 @@ import java.io.Serializable;
 
 /**
  * print:
- * A.f1=100
- * B.f2=100
+ * A.f11=11
+ * B.f21=21
  * serialization
- * A.f1=100
+ * A.f11=11
+ * deserialization
+ * B.f11=11
+ * B.f21=0
  */
-public class SampleSerialization {
+public class SampleSerialization2 {
     static class A {
-        private int f1 = 100;
+        transient protected int f11 = 11;
 
         public A() {
-            System.out.println("A.f1=" + f1);
+            System.out.println("A.f11=" + f11);
         }
     }
 
     static class B extends A implements Serializable {
-        private int f2 = 100;
+        transient protected int f21 = 21;
 
         public B() {
-            System.out.println("B.f2=" + f2);
+            System.out.println("B.f21=" + f21);
         }
     }
 
     public static void main(String... args) {
         B b = new B();
+        b.f11 = 110;
+        b.f21 = 210;
 
         System.out.println("serialization");
 
@@ -44,11 +49,16 @@ public class SampleSerialization {
             try {
                 ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
                 ObjectInputStream is = new ObjectInputStream(in);
-                is.readObject();
+                b = (B) is.readObject();
                 in.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+            System.out.println("deserialization");
+
+            System.out.println("B.f11=" + b.f11);
+            System.out.println("B.f21=" + b.f21);
         } catch (Exception e) {
             e.printStackTrace();
         }
