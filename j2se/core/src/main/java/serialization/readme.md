@@ -73,7 +73,7 @@ public class SampleSerialization {
 <details>
   <summary><strong title="1">![][key]</strong></summary>
     1 are correct.</br>
-    <a href="SampleSerialization.java" title="code">![][code]</a>
+    <a href="SampleSerialization.java" title="SampleSerialization.java">![][code]</a>
 </details>
 
 ######*see*: [Serializable](http://docs.oracle.com/javase/7/docs/api/index.html?java/io/Serializable.html)
