@@ -72,7 +72,9 @@ public class SampleSerialization {
 
 <details>
   <summary><strong title="1">![][key]</strong></summary>
-    1 are correct.</br>
+    1 are correct.
+    During deserialization, the fields of non-serializable classes will be initialized using the public or protected no-arg constructor of the class. A no-arg constructor must be accessible to the subclass that is serializable. The fields of serializable subclasses will be restored from the stream.</br>
+    
     <a href="SampleSerialization1.java" title="SampleSerialization1.java">![][code]</a>
 </details>
 
@@ -167,7 +169,8 @@ public class SampleSerialization {
 
 <details>
   <summary><strong title="1">![][key]</strong></summary>
-    1 are correct.</br>
+    1 are correct.
+    During deserialization, the fields of non-serializable classes will be initialized using the public or protected no-arg constructor of the class. A no-arg constructor must be accessible to the subclass that is serializable. The fields of serializable subclasses will be restored from the stream.</br>
     <a href="SampleSerialization2.java" title="SampleSerialization2.java">![][code]</a>
 </details>
 
