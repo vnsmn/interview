@@ -19,6 +19,7 @@
     </parent>
 
     <modules>
+        <module>core</module>
         <module>concurrency</module>
     </modules>
 </project>
