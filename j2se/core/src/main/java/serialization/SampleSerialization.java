@@ -24,6 +24,7 @@ public class SampleSerialization {
 
     static class B extends A implements Serializable {
         private int f2 = 100;
+
         public B() {
             System.out.println("B.f2=" + f2);
         }
@@ -45,7 +46,11 @@ public class SampleSerialization {
                 ObjectInputStream is = new ObjectInputStream(in);
                 is.readObject();
                 in.close();
-            } catch (Exception e) { e.printStackTrace(); }
-        } catch (Exception e) { e.printStackTrace(); }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
