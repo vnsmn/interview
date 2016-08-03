@@ -55,7 +55,7 @@ public class SampleSerialization {
     serialization
     A.f11=11
 ```
->2. 
+>2.
 ```java 
     A.f11=11
     B.f21=21
@@ -146,7 +146,7 @@ public class SampleSerialization {
     B.f11=11
     B.f21=0
 ```
->2. 
+>2.
 ```java 
     A.f11=11
     B.f21=21
