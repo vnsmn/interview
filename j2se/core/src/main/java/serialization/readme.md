@@ -1,6 +1,5 @@
 # Serialization #
 
-***
 <a name="a1"></a>
 `1` *Given*
 
