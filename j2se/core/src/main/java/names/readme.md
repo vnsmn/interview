@@ -1,5 +1,4 @@
-### Names ###
-* [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "Chapter 6. Names")
+### [Names](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "Java Language Specification. Chapter 6. Names") ###
 
 <a name="a1"></a>
 `1` *Specify a name and a identifier*
