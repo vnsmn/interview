@@ -2,7 +2,7 @@
 * [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "Chapter 6. Names")
 
 <a name="a1"></a>
-`1` *Укажите имя и идентификатор*
+`1` *Specify a name and a identifier*
 
 ```java
 class Test {
