@@ -14,7 +14,6 @@ class Test {
 }
 ```
 
-*Что распечает следующий код ?*
 >1. identificators: Test, main , and the first occurrences of args and c;</br>
     names: String, Class, System.out.getClass, System.out.println, 
         c.toString, args, args.length.
@@ -36,7 +35,7 @@ class Test {
     A qualified name consists of a name, a " . " token, and an identifier.    
 </details>
 
-######*see*: [Serializable](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "6.2. Names and Identifiers")
+######*see*: [Names](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "6.2. Names and Identifiers")
 
 ***
 
