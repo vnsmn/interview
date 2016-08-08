@@ -1,7 +1,7 @@
-# Java Core #
+### Names ###
+* [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html "Chapter 6. Names")
 
-### Serializable ###
-* [Serializable](https://github.com/vnsmn/interview/tree/master/jcore/access_modifiers.md "static, abstract, final")
+
 
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
