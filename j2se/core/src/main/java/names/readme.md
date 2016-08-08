@@ -15,11 +15,11 @@ class Test {
 ```
 
 *Что распечает следующий код ?*
->1. identificators: Test, main , and the first occurrences of args and c;
+>1. identificators: Test, main , and the first occurrences of args and c;</br>
     names: String, Class, System.out.getClass, System.out.println, 
         c.toString, args, args.length.
 
->2. names: Test, main , and the first occurrences of args and c;
+>2. names: Test, main , and the first occurrences of args and c;</br>
     identificators: String, Class, System.out.getClass, System.out.println, 
         c.toString, args, args.length.
 
