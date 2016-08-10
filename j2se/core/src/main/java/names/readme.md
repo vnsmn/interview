@@ -38,6 +38,46 @@ class Test {
 
 ***
 
+<a name="a2"></a>
+`1` *Giden*
+
+```java
+package names;
+
+import java.awt.Point;
+
+public class ObscuringTest {
+    static Point Test = new Point(100, 200);
+
+    public static void main(String s[]) {
+        System.out.println(Test.x);
+    }
+}
+
+class Test {
+    static int x = 5;
+}
+```
+
+*What will be printed in the code?*
+
+>1. 5
+>2. 100
+
+<details>
+  <summary><strong title="2">![][key]</strong></summary>
+    2 are correct.</br>
+    It is may sometimes be impossible to
+    refer to a visible type or package declaration via its simple name. 
+    We say that such a declaration is obscured.
+        <a href="ObscuringTest.java" title="ObscuringTest.java">![][code]</a>
+</details>
+
+######*see*: [Obscuring](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.4.2 "6.4.2. Obscuring")
+
+***
+
+
 [key]: https://github.com/vnsmn/interview/blob/master/images/key.png
 [help]: https://github.com/vnsmn/interview/blob/master/images/question-24.png
 [code]: https://github.com/vnsmn/interview/blob/master/images/source-code-24.png
