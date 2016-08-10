@@ -69,8 +69,8 @@ class Test {
     2 are correct.</br>
     It is may sometimes be impossible to
     refer to a visible type or package declaration via its simple name. 
-    We say that such a declaration is obscured.
-        <a href="ObscuringTest.java" title="ObscuringTest.java">![][code]</a>
+    We say that such a declaration is obscured.</br>
+    <a href="ObscuringTest.java" title="ObscuringTest.java">![][code]</a>
 </details>
 
 ######*see*: [Obscuring](https://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.4.2 "6.4.2. Obscuring")
