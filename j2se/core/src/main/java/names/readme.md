@@ -39,7 +39,7 @@ class Test {
 ***
 
 <a name="a2"></a>
-`1` *Giden*
+`2` *Giden*
 
 ```java
 package names;
