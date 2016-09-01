@@ -13,6 +13,9 @@
 
 >4. If a field declaration hides the declaration of another field, the two fields need not have the same type.<a href="package1/Test1.java" title="Test1.java">![][code]</a>
 
+>5. If two or more (distinct) field modifiers appear in a field declaration, it is customary, though not required, that they appear in the order consistent with that shown above in the production for FieldModifier.
+    FieldModifier: Annotation public protected private static final transient volatile
+
 
 ***
 
