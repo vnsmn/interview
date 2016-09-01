@@ -6,3 +6,5 @@
 * [Serialization](https://github.com/vnsmn/interview/tree/master/j2se/core/src/main/java/serialization)  
 
 * [Names](https://github.com/vnsmn/interview/tree/master/j2se/core/src/main/java/names)  
+
+* [Classes](https://github.com/vnsmn/interview/tree/master/j2se/core/src/main/java/classes)  
