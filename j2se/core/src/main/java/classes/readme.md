@@ -2,7 +2,7 @@
 
 <a name="readme"></a>
 
-###### [Notes](notes.md "TWO-MINUTE DRILL")
+###### *[Notes](notes.md "TWO-MINUTE DRILL")*
 
 ***
 
